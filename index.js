@@ -54,24 +54,19 @@ bot.on("message", msg => {
     if (msg.content === "!fullbody") {
         messageT = "__***     Full body     ***__\n Voici tout les exercices du full body du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=full-body&page=1"
         msg.channel.send(messageT); 
-        msg.channel.send({
+        msg.channel.send("Normal", {
             files: [
-                "https://darebee.com/images/workouts/master-plan-workout.jpg\n"
+                "https://darebee.com/images/workouts/master-plan-workout.jpg"
             ]
         });
-        msg.channel.send({
+        msg.channel.send("Normal", {
             files: [
-                "https://darebee.com/images/workouts/top-of-the-world-workout.jpg\n"
+                "https://darebee.com/images/workouts/top-of-the-world-workout.jpg"
             ]
         });
-        msg.channel.send({
+        msg.channel.send("Hard", {
             files: [
-                "https://darebee.com/images/workouts/into-the-fire-workout.jpg\n"
-            ]
-        });
-        msg.channel.send({
-            files: [
-                "https://darebee.com/images/workouts/into-the-fire-workout.jpg\n"
+                "https://darebee.com/images/workouts/into-the-fire-workout.jpg"
             ]
         });
     }
