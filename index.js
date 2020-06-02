@@ -14,7 +14,7 @@ bot.on("message", msg => {
     }
     if (msg.content === "!jambes") {
         let messageT = "";
-        messageT = "```     **Les jambes**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "```     **Les jambes**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg```"
         msg.channel.send(messageT);
         // msg.channel.send('Message that goes above image', {
         //     files: [
