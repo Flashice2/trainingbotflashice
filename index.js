@@ -40,7 +40,9 @@ bot.on("message", msg => {
         msg.channel.send(messageT); 
         msg.channel.send({
             files: [
-                "https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+                "https://www.darebee.com/images/workouts/two-minute-plank-workout.jpg",
+                "https://www.darebee.com/images/workouts/solid-core-workout.jpg",
+                "https://www.darebee.com/images/workouts/core-conditioning-workout.jpg"
             ]
         });
     }
