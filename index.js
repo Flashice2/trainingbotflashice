@@ -9,11 +9,12 @@ bot.on('ready', function () {
 
 bot.on("message", msg => {
     if (msg.content === "!help") {
-        const commande = "\n!jambes : ******* \n!fessier : ******* \n!bras : ******* \n!abdos : ******* \n!dos : ******* \n!pect : *******"
+        const commande = "         -Help-         \n!jambes : ------- \n!fessier : ------- \n!bras : ------- \n!abdos : ------- \n!dos : ------- \n!pect : -------"
         msg.reply(commande);
     }
     if (msg.content === "!jambes") {
         msg.reply("jambe");
+        msg.reply("https://www.darebee.com/workouts/pretty-little-monster-workout.html");
     }
     if (msg.content === "!fessier") {
         msg.reply("fessier");
