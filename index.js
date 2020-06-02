@@ -36,8 +36,13 @@ bot.on("message", msg => {
         msg.channel.send(messageT); 
     }
     if (msg.content === "!dos") {
-        messageT = "__***     Le dos     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Le dos     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
         msg.channel.send(messageT); 
+        msg.channel.send({
+            files: [
+                "https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+            ]
+        });
     }
     if (msg.content === "!pect") {
         messageT = "__***     Le pect     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
