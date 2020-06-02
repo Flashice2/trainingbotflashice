@@ -9,28 +9,32 @@ bot.on('ready', function () {
 
 bot.on("message", msg => {
     if (msg.content === "!help") {
-        const commande = "         -Help-         \n!jambes : ------- \n!fessier : ------- \n!bras : ------- \n!abdos : ------- \n!dos : ------- \n!pect : -------"
+        const commande = "\n         -Help-         \n!jambes : ------- \n!fessier : ------- \n!bras : ------- \n!abdos : ------- \n!dos : ------- \n!pect : -------"
         msg.reply(commande);
     }
     if (msg.content === "!jambes") {
-        msg.reply("jambe");
-        msg.reply("https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg");
-        msg.channel.send("test")
+        msg.channel.send("jambe");
+        msg.channel.send("https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg");
+        msg.channel.send('Message that goes above image', {
+            files: [
+                "https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+            ]
+        });
     }
     if (msg.content === "!fessier") {
-        msg.reply("fessier");
+        msg.channel.send("fessier");
     }
     if (msg.content === "!bras") {
-        msg.reply("bras");
+        msg.channel.send("bras");
     }
     if (msg.content === "!abdos") {
-        msg.reply("abdos");
+        msg.channel.send("abdos");
     }
     if (msg.content === "!dos") {
-        msg.reply("dos");
+        msg.channel.send("dos");
     }
     if (msg.content === "!pect") {
-        msg.reply("pect");
+        msg.channel.send("pect");
     }
 
 });
