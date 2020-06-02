@@ -20,31 +20,23 @@ bot.on("message", msg => {
         msg.channel.send(commande);
     }
     if (msg.content === "!jambes") {
-        messageT = "__***     Les jambes     ***__\n Voici tout les exercices du bas  du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=lower-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Les jambes     ***__\n Voici tout les exercices du bas  du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=lower-body&page=1"
         msg.channel.send(messageT);
 
     }
     if (msg.content === "!fessier") {
-        messageT = "__***     Le fessier     ***__\n Voici tout les exercices du bas  du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=lower-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Le fessier     ***__\n Voici tout les exercices du bas  du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=lower-body&page=1"
         msg.channel.send(messageT);    }
     if (msg.content === "!bras") {
-        messageT = "__***     Les bras     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Les bras     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
         msg.channel.send(messageT); 
     }
     if (msg.content === "!abdos") {
-        messageT = "__***     Les abdos     ***__\n Voici tout les exercices des abdos: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=abs&page=1\n https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Les abdos     ***__\n Voici tout les exercices des abdos: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=abs&page=1"
         msg.channel.send(messageT);
         msg.channel.send({
             files: [
-                "https://www.darebee.com/images/workouts/two-minute-plank-workout.jpg",
-                "https://www.darebee.com/images/workouts/solid-core-workout.jpg",
-                "https://www.darebee.com/images/workouts/core-conditioning-workout.jpg",
-                "https://www.darebee.com/images/workouts/abs-please-workout.jpg",
-                "https://www.darebee.com/images/workouts/hiit-abs-workout.jpg",
-                "https://www.darebee.com/images/workouts/super-abs-workout.jpg",
-                "https://www.darebee.com/images/workouts/classic-abs-workout.jpg",
-                "https://www.darebee.com/images/workouts/power-abs-workout.jpg",
-                "https://www.darebee.com/images/workouts/five-minute-plank-workout.jpg"
+                "https://www.darebee.com/images/workouts/two-minute-plank-workout.jpg"
             ]
         });
     }
@@ -53,7 +45,7 @@ bot.on("message", msg => {
         msg.channel.send(messageT); 
     }
     if (msg.content === "!pect") {
-        messageT = "__***     Le pect     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Le pect     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
         msg.channel.send(messageT); 
     }
     if (msg.content === "!epaule") {
@@ -62,6 +54,13 @@ bot.on("message", msg => {
     if (msg.content === "!fullbody") {
         messageT = "__***     Full body     ***__\n Voici tout les exercices du full body du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=full-body&page=1"
         msg.channel.send(messageT); 
+        msg.channel.send({
+            files: [
+                "Difficulty: Normal\n" + "https://darebee.com/images/workouts/master-plan-workout.jpg\n",
+                "Difficulty: Normal\n" + "https://darebee.com/images/workouts/top-of-the-world-workout.jpg\n",
+                "Difficulty: Hard\n" + "https://darebee.com/images/workouts/into-the-fire-workout.jpg\n" + "https://darebee.com/images/workouts/muscles/into-the-fire-workout.jpg"
+            ]
+        });
     }
     if (msg.content === "!lowerbody") {
         messageT = "__***     Lower body     ***__\n Voici tout les exercices du bas du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=lower-body&page=1"
