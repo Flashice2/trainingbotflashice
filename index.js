@@ -16,7 +16,7 @@ bot.on('ready', function () {
 bot.on("message", msg => {
     let messageT = "";
     if (msg.content === "!help") {
-        const commande = "\n         -Help-         \n!jambes : ------- \n!fessier : ------- \n!bras : ------- \n!abdos : ------- \n!dos : ------- \n!pect : -------"
+        const commande = "\n         -Help-         \n!jambes : mollet, cuisses \n!fessier : fessier \n!bras : biceps, triceps, avants bras \n!abdos : abdominaux, obliques \n!dos : lombaire, dorso \n!pect : pectoraux"
         msg.channel.send(commande);
     }
     if (msg.content === "!jambes") {
@@ -42,6 +42,9 @@ bot.on("message", msg => {
     if (msg.content === "!pect") {
         messageT = "__***     Le pect     ***__\n Voici ttout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
         msg.channel.send(messageT); 
+    }
+    if (msg.content === "!epaule") {
+
     }
     if (msg.content === "!credit") {
         messageT = "__***     Les crédits     ***__\nBy: Antoine Bédard\n2020-06-01"
