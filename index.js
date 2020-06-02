@@ -14,7 +14,7 @@ bot.on("message", msg => {
         msg.channel.send(commande);
     }
     if (msg.content === "!jambes") {
-        messageT = "     **Les jambes**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Les jambes***__\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
         msg.channel.send(messageT);
         // msg.channel.send('Message that goes above image', {
         //     files: [
@@ -23,22 +23,22 @@ bot.on("message", msg => {
         // });
     }
     if (msg.content === "!fessier") {
-        messageT = "     **Le fessier**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Le fessier***__\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
         msg.channel.send(messageT);    }
     if (msg.content === "!bras") {
-        messageT = "     **Les bras**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Les bras***__\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
         msg.channel.send(messageT); 
     }
     if (msg.content === "!abdos") {
-        messageT = "     **Les abdos**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Les abdos***__\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
         msg.channel.send(messageT); 
     }
     if (msg.content === "!dos") {
-        messageT = "     **Le dos**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Le dos***__\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
         msg.channel.send(messageT); 
     }
     if (msg.content === "!pect") {
-        messageT = "     **Le pect**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        messageT = "__***     Le pect***__\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
         msg.channel.send(messageT); 
     }
 
