@@ -8,8 +8,13 @@ bot.on('ready', function () {
 });
 
 bot.on("message", msg => {
-    if (msg.content === "!Hello") {
-        msg.reply("Hello World!");
+    if (msg.content === "!help") {
+        msg.reply("!jambes");
+        msg.reply("!fessier");
+        msg.reply("!bras");
+        msg.reply("!abdos");
+        msg.reply("!dos");
+        msg.reply("!pect");
     }
     // les commande
 });
