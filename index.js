@@ -33,18 +33,24 @@ bot.on("message", msg => {
     }
     if (msg.content === "!abdos") {
         messageT = "__***     Les abdos     ***__\n Voici tout les exercices des abdos: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=abs&page=1\n https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
-        msg.channel.send(messageT); 
-    }
-    if (msg.content === "!dos") {
-        messageT = "__***     Le dos     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
-        msg.channel.send(messageT); 
+        msg.channel.send(messageT);
         msg.channel.send({
             files: [
                 "https://www.darebee.com/images/workouts/two-minute-plank-workout.jpg",
                 "https://www.darebee.com/images/workouts/solid-core-workout.jpg",
-                "https://www.darebee.com/images/workouts/core-conditioning-workout.jpg"
+                "https://www.darebee.com/images/workouts/core-conditioning-workout.jpg",
+                "https://www.darebee.com/images/workouts/abs-please-workout.jpg",
+                "https://www.darebee.com/images/workouts/hiit-abs-workout.jpg",
+                "https://www.darebee.com/images/workouts/super-abs-workout.jpg",
+                "https://www.darebee.com/images/workouts/classic-abs-workout.jpg",
+                "https://www.darebee.com/images/workouts/power-abs-workout.jpg",
+                "https://www.darebee.com/images/workouts/five-minute-plank-workout.jpg"
             ]
         });
+    }
+    if (msg.content === "!dos") {
+        messageT = "__***     Le dos     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
+        msg.channel.send(messageT); 
     }
     if (msg.content === "!pect") {
         messageT = "__***     Le pect     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
