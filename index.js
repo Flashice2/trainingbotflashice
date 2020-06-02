@@ -56,10 +56,22 @@ bot.on("message", msg => {
         msg.channel.send(messageT); 
         msg.channel.send({
             files: [
-                "https://darebee.com/images/workouts/master-plan-workout.jpg\n",
-                "https://darebee.com/images/workouts/top-of-the-world-workout.jpg\n",
-                "https://darebee.com/images/workouts/into-the-fire-workout.jpg", 
-                "https://darebee.com/images/workouts/muscles/into-the-fire-workout.jpg\n"
+                "https://darebee.com/images/workouts/master-plan-workout.jpg\n"
+            ]
+        });
+        msg.channel.send({
+            files: [
+                "https://darebee.com/images/workouts/top-of-the-world-workout.jpg\n"
+            ]
+        });
+        msg.channel.send({
+            files: [
+                "https://darebee.com/images/workouts/into-the-fire-workout.jpg\n"
+            ]
+        });
+        msg.channel.send({
+            files: [
+                "https://darebee.com/images/workouts/into-the-fire-workout.jpg https://darebee.com/images/workouts/muscles/into-the-fire-workout.jpg\n"
             ]
         });
     }
