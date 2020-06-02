@@ -9,12 +9,8 @@ bot.on('ready', function () {
 
 bot.on("message", msg => {
     if (msg.content === "!help") {
-        msg.reply("!jambes");
-        msg.reply("!fessier");
-        msg.reply("!bras");
-        msg.reply("!abdos");
-        msg.reply("!dos");
-        msg.reply("!pect");
+        const commande = "!jambes \n !fessier !bras !abdos !dos !pect"
+        msg.reply(commande);
     }
     // les commande
 });
