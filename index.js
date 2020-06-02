@@ -13,13 +13,14 @@ bot.on("message", msg => {
         msg.reply(commande);
     }
     if (msg.content === "!jambes") {
-        msg.channel.send("jambe");
-        msg.channel.send("https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg");
-        msg.channel.send('Message that goes above image', {
-            files: [
-                "https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
-            ]
-        });
+        let messageT = "";
+        messageT = "```     **Les jambes**\n\nhttps://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        msg.channel.send(messageT);
+        // msg.channel.send('Message that goes above image', {
+        //     files: [
+        //         "https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"
+        //     ]
+        // });
     }
     if (msg.content === "!fessier") {
         msg.channel.send("fessier");
