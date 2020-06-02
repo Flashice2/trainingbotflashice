@@ -15,7 +15,6 @@ bot.on("message", msg => {
     if (msg.content === "!jambes") {
         msg.reply("jambe");
         msg.reply("https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg");
-        msg.send("feefef", {file: ["https://www.darebee.com/images/workouts/pretty-little-monster-workout.jpg"]})
     }
     if (msg.content === "!fessier") {
         msg.reply("fessier");
