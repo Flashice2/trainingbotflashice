@@ -16,7 +16,7 @@ bot.on('ready', function () {
 bot.on("message", msg => {
     let messageT = "";
     if (msg.content === "!help") {
-        const commande = "\n         -Help-         \n!jambes : mollet, cuisses \n!fessier : fessier \n!bras : biceps, triceps, avants bras \n!abdos : abdominaux, obliques \n!dos : lombaire, dorso \n!pect : pectoraux\n!epaule : epaule\n !fullbody\n!lowerbody\n!upperbody"
+        const commande = "\n         -Help-         \n!jambes : mollet, cuisses \n!fessier : fessier \n!bras : biceps, triceps, avants bras \n!abdos : abdominaux, obliques \n!dos : lombaire, dorso \n!flex : flexibilité\n!pect : pectoraux\n!epaule : epaule\n !fullbody\n!lowerbody\n!upperbody"
         msg.channel.send(commande);
     }
     if (msg.content === "!jambes") {
@@ -34,19 +34,36 @@ bot.on("message", msg => {
     if (msg.content === "!abdos") {
         messageT = "__***     Les abdos     ***__\n Voici tout les exercices des abdos: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=abs&page=1"
         msg.channel.send(messageT);
-        msg.channel.send({
+
+        msg.channel.send("Normal", {
             files: [
-                "https://www.darebee.com/images/workouts/two-minute-plank-workout.jpg"
+                "https://darebee.com/images/workouts/epic-abs-workout.jpg"
+            ]
+        });
+        msg.channel.send("Normal", {
+            files: [
+                "https://darebee.com/workouts/cardio-crunch-workout.html#sets"
             ]
         });
     }
     if (msg.content === "!dos") {
         messageT = "__***     Le dos     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
         msg.channel.send(messageT); 
+
+    }
+    if (msg.content === "!flex") {
+        messageT = "__***     Le flex     ***__\n "
+        msg.channel.send(messageT); 
+        msg.channel.send("Light", {
+            files: [
+                "https://darebee.com/workouts/morning-stretch-workout.html"
+            ]
+        });
     }
     if (msg.content === "!pect") {
         messageT = "__***     Le pect     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
         msg.channel.send(messageT); 
+
     }
     if (msg.content === "!epaule") {
 
@@ -55,6 +72,7 @@ bot.on("message", msg => {
         messageT = "__***     Full body     ***__\n Voici tout les exercices du full body du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=full-body&page=1"
         msg.channel.send(messageT); 
         msg.channel.send("Normal", {
+
             files: [
                 "https://darebee.com/images/workouts/master-plan-workout.jpg"
             ]
@@ -69,18 +87,31 @@ bot.on("message", msg => {
                 "https://darebee.com/images/workouts/into-the-fire-workout.jpg"
             ]
         });
+        msg.channel.send("Difficile", {
+            files: [
+                "https://darebee.com/workouts/make-my-day-workout.html#timer"
+            ]
+        });
+        msg.channel.send("Normal", {
+            files: [
+                "https://darebee.com/workouts/homemade-hero-workout.html#hiittimer"
+            ]
+        });
     }
     if (msg.content === "!lowerbody") {
         messageT = "__***     Lower body     ***__\n Voici tout les exercices du bas du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=lower-body&page=1"
         msg.channel.send(messageT); 
+
     }
     if (msg.content === "!upperbody") {
         messageT = "__***     Upper body     ***__\n Voici tout les exercices du haut du corps: https://www.darebee.com/filter#sort=position&sortdir=desc&attr.ct10.value=upper-body&page=1"
         msg.channel.send(messageT); 
+
     }
     if (msg.content === "!credit") {
         messageT = "__***     Les crédits     ***__\nBy: Antoine Bédard\n2020-06-01"
         msg.channel.send(messageT); 
+        
     }
 
 });
